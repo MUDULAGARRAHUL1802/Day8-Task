@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Developer Application Form</title>
+</head>
+<body align="center">
+    <h1>Full Stack Developer Application Form</h1>
+    <form action="./result.html">
+   
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name" maxlength="50" minlength="3">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" maxlength="12" minlength="10">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60" required placeholder="Enter your age">
+        <br><br>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" required min="1" max="20" placeholder="Enter your experience in years">
+        <br><br>
+
+        <label for="skills">Skills (select multiple):</label>
+        <select id="skills" name="skills" multiple required>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+            <option value="node">Node.js</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+        <br><br>
+
+        <label for="framework">Preferred Framework:</label>
+        <select id="framework" name="framework" required>
+            <option value="" disabled selected>Select your preferred framework</option>
+            <option value="django">Django</option>
+            <option value="spring">Spring Boot</option>
+            <option value="express">Express</option>
+            <option value="laravel">Laravel</option>
+        </select>
+        <br><br>
+
+        <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" required>
+        <br><br>
+
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+        <br><br>
+
+        <label for="availability">Available Start Date:</label>
+        <input type="date" id="availability" name="availability" required>
+        <br><br>
+
+     
+        <label for="cover_letter">Cover Letter:</label>
+        <input type="text" name="cover_letter" required minlength="200" maxlength="1000" placeholder="Write a brief cover letter (50-1000 characters)"></textarea>
+        <br><br>
+
+   
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
